@@ -10,7 +10,7 @@ html {
 }
 
 h1, .t-h1 {
-    @include fluid-type(34px, 80px);
+    @include fluid-type(34px, 70px);
 
     font-family: $t-title;
     margin-bottom: space();
@@ -20,7 +20,8 @@ h1, .t-h1 {
 .t-trivia {
     @include fluid-type(28px, 40px);
 
-    line-height: 1.4;
+    line-height: 1.25;
+    font-weight: 300;
 }
 
 .t-header {
@@ -32,9 +33,10 @@ h1, .t-h1 {
 }
 
 .t-subtitle {
-    @include fluid-type(16px, 22px);
+    @include fluid-type(16px, 26px);
 
-    font-style: italic;
+    // font-style: italic;
+    font-weight: 700;
     margin: space(.5);
 }
 
