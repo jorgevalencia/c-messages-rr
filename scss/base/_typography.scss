@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Gentium+Basic:400,700');
+
+/* Typography */
+html {
+    color: $c-dark;
+    font-family: $t-default;
+    font-size: $base-font-size;
+    font-weight: 300;
+    line-height: $base-line-height;
+}
+
+h1, .t-h1 {
+    @include fluid-type(34px, 80px);
+
+    font-family: $t-title;
+    margin-bottom: space();
+    line-height: 1;
+}
+
+.t-trivia {
+    @include fluid-type(28px, 40px);
+
+    line-height: 1.4;
+}
+
+.t-header {
+    @include fluid-type(15px, 20px);
+
+    letter-spacing: 7.5px;
+    text-transform: uppercase;
+    margin: space();
+}
+
+.t-subtitle {
+    @include fluid-type(16px, 22px);
+
+    font-style: italic;
+    margin: space(.5);
+}
+
+.t-footer {
+    @include fluid-type(20px, 40px);
+
+    font-family: $t-title;
+    letter-spacing: 1px;
+    margin: space();
+}
+
+b, strong { font-weight: 700; }
+
+.italic { font-style: italic; }
+
+p {
+    @include fluid-type($global-min-font, $global-max-font);
+
+    margin: 0 0 space();
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}

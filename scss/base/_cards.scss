@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+  width: 100%;
+  padding: space(.5);
+  text-align: center;
+
+  &.has-borderRed { background-color: $c-red }
+  &.has-borederGreen { background-color: $c-green }
+
+  @include breakpointVertical(600px) {
+    height: 100vh;
+  }
+
+}
+
+.card-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  margin: space();
+  color: $c-opacity;
+  max-width: 650px;
+}
+
+.card-footer {
+  margin: space();
+  color: $c-opacity;
+  max-width: 650px;
+}
+
+.card-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: space();
+  max-width: 650px;
+}
+
+.card-separator {
+  background-color: $c-opacity;
+  display: block;
+  height: 4px;
+  margin-bottom: space();
+  width: 20px;
+}
+
+.card-intro {
+  background-color: $c-white;
+  color: $c-brown;
+
+  .card-title {
+    color: $c-red;
+  }
+}
+
+.card-present {
+  background-color: $c-red;
+  color: $c-white;
+
+  .card-title {
+    color: $c-beige;
+  }
+}
+
+.card-trivia {
+  background-color: $c-green;
+  color: $c-white;
+
+  .card-title {
+    color: $c-beige;
+  }
+}
+
+.card-message {
+  background-color: $c-beige;
+  color: $c-brown;
+
+  .card-title {
+    color: $c-red;
+  }
+
+  &.inverted {
+    .card-title {
+      color: $c-green;
+    }
+  }
+}
