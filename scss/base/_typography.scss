@@ -48,6 +48,10 @@ h1, .t-h1 {
     margin: space();
 }
 
+.small {
+    @include fluid-type(14px, 20px);
+}
+
 b, strong { font-weight: 700; }
 
 .italic { font-style: italic; }

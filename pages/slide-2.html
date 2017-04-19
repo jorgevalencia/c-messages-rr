@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js gt-ie9 ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js gt-ie9"> <!--<![endif]-->
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- CSS, you gotta have style -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+  <body>
+
+  <!-- CARD 1 - Intro -->
+  <div class="card js-card-1">
+    <div class="card-container card-intro">
+      <div class="card-content">
+        <h1 class="card-title  t-title">Slide 1</h1>
+      </div>
+    </div>
+  </div>
+
+    <!-- CARD 1 - Regalo -->
+  <div class="card js-card-2">
+    <div class="card-container card-present">
+      <div class="card-content">
+        <h1 class="card-title  t-title">Slide 2</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 - Mensaje Verde -->
+  <div class="card js-card-3">
+    <div class="card-container card-message">
+      <div class="card-content">
+        <h1 class="card-title t-title">Slide 3</h1>
+      </div>
+    </div>
+  </div>
+
+    <!-- SCRIPTS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/j.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.js-card-1', '.js-card-2', '.js-card-3').fullpage();
+      });
+    </script>
+
+  </body>
+</html>

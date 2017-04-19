@@ -15,6 +15,25 @@
     fill: currentColor;
 }
 
+.u-arrow {
+    border: solid $c-red;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.u-bounce {
+    animation: bounce 2s infinite;
+    display: block;
+}
+
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-20px);}
+ 60% {transform: translateY(-10px);}
+}
+
 .u-wrapper {
     height: 100%;
     margin: 0 auto;

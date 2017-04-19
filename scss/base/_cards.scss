@@ -7,7 +7,7 @@
   &.has-borderRed { background-color: $c-red }
   &.has-borederGreen { background-color: $c-green }
 
-  @include breakpointVertical(600px) {
+  @include breakpointVertical(550px) {
     height: 100vh;
   }
 
